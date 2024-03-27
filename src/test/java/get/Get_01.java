@@ -14,7 +14,7 @@ public class Get_01 extends HerokuApp_BaseUrl {
  https://restful-booker.herokuapp.com/booking/34
  HTTP Status Code'unun 200
  Content Type'ın "application/json; charset=utf-8"
- Status Line'ın "HTTP/1.1 200 OK
+ Status Line'ın "HTTP/1.1 200 OK"
  Server'ın' "Cowboy"
  Connection'ın "keep-alive"
  oldugunu dogrular
@@ -29,7 +29,7 @@ public class Get_01 extends HerokuApp_BaseUrl {
 
         //3- send the request and get the response
         Response response =given().get(url);
-        response.prettyPrint();
+        response.prettyPrint(); //response (gelen cevap) yazdirilir
 
         //4- do assertion
         response.then()
